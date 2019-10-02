@@ -2,6 +2,9 @@
 
 Web Programming with Python and JavaScript
 
+## Github pages hosting:
+https://nakhla.github.io/CS50-Project0
+
 # Description
 This is a simple website called "This is Egypt" which give brief info about Egypt and places every tourist should take into consideration in his plan to visit.
 
