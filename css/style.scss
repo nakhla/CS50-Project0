@@ -1,0 +1,137 @@
+/* scss variables*/
+$txtcolor: red;
+$bcolor: black;
+$bwidth: 5px;
+
+/* scss inheritance*/
+%togo{
+    font-weight: bold;
+    color: bisque;
+    border-width: $bwidth;
+    border-color: $bcolor;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.cairo {
+    @extend %togo;
+    background-color: royalblue;
+	border-style: dashed;
+}
+
+.alex {
+    @extend %togo;
+    background-color: teal;
+	border-style: solid;
+}
+
+.luxor {
+    @extend %togo;
+    background-color: tomato;
+	border-style: dotted;
+}
+
+.sharm {
+    @extend %togo;
+    background-color: limegreen;
+	border-style: double;
+}
+
+
+
+/* class selector and different css properties*/
+.element{
+    background: #5a69ed;
+    font-weight: bold;
+    color: bisque;
+    border-width: $bwidth;
+	border-style: dashed;
+    border-color: $bcolor;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/* scss nesting*/
+.lead {
+    font-size: 24px;
+
+    p {
+        color: blue;
+		font-weight: bold;
+    }
+
+    ol {
+        color: green;
+		
+		a {
+			text-decoration: underline dashed blue;
+			font-style: italic;
+		}
+    }
+}
+/* id selector and > selector and :pseudoclass selector*/
+#sidebar > ul > li a:hover {
+	color: yellow;
+	background-color: springgreen; 
+}
+
+/* attribute selector */
+input[type=password]{
+	background-color: yellow;
+}
+
+/* Descendant Selector */
+ul li{
+	color: blue;
+	font-size: 20px;
+}
+/* Multiple Element selector */
+table, th, td {
+	border: 1px dotted $bcolor;
+	padding: 15px;
+}
+
+th{
+	background-color:lightblue;
+}
+
+/* pseudoelement selector */
+.currency::before {
+	color: $txtcolor;
+	content:'$';
+}
+
+/* media queries */
+@media (min-width: 500px) {
+	#trimbymedia::before {
+	content: 'Every day is a journey and Your journey starts here';
+  }
+}
+/* id selector inside @media */
+@media (max-width: 499px) {
+	#trimbymedia::before {
+	content: 'starts here';
+  }
+}
+
+body{
+
+    padding-top: 45px;
+}
+
+.navbar{
+
+    padding: 2px;
+}
+
+h1{
+	color: $txtcolor;
+}
+
+h3, h4{
+	color: $bcolor;
+}
+/* class selector */
+.navbar-brand{
+    padding-left: 25px;
+}

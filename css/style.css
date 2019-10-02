@@ -1,0 +1,123 @@
+/* scss variables*/
+/* scss inheritance*/
+.sharm, .luxor, .alex, .cairo {
+  font-weight: bold;
+  color: bisque;
+  border-width: 5px;
+  border-color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.cairo {
+  background-color: royalblue;
+  border-style: dashed;
+}
+
+.alex {
+  background-color: teal;
+  border-style: solid;
+}
+
+.luxor {
+  background-color: tomato;
+  border-style: dotted;
+}
+
+.sharm {
+  background-color: limegreen;
+  border-style: double;
+}
+
+/* class selector and different css properties*/
+.element {
+  background: #5a69ed;
+  font-weight: bold;
+  color: bisque;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: black;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* sass nesting*/
+.lead {
+  font-size: 24px;
+}
+.lead p {
+  color: blue;
+  font-weight: bold;
+}
+.lead ol {
+  color: green;
+}
+.lead ol a {
+  text-decoration: underline dashed blue;
+  font-style: italic;
+}
+
+/* id selector and > selector and :pseudoclass selector*/
+#sidebar > ul > li a:hover {
+  color: yellow;
+  background-color: springgreen;
+}
+
+/* attribute selector */
+input[type=password] {
+  background-color: yellow;
+}
+
+/* Descendant Selector */
+ul li {
+  color: blue;
+  font-size: 20px;
+}
+
+/* Multiple Element selector */
+table, th, td {
+  border: 1px dotted black;
+  padding: 15px;
+}
+
+th {
+  background-color: lightblue;
+}
+
+/* pseudoelement selector */
+.currency::before {
+  color: red;
+  content: "$";
+}
+
+@media (min-width: 500px) {
+  #trimbymedia::before {
+    content: "Every day is a journey and Your journey starts here";
+  }
+}
+@media (max-width: 499px) {
+  #trimbymedia::before {
+    content: "starts here";
+  }
+}
+body {
+  padding-top: 45px;
+}
+
+.navbar {
+  padding: 2px;
+}
+
+h1 {
+  color: red;
+}
+
+h3, h4 {
+  color: black;
+}
+
+.navbar-brand {
+  padding-left: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
